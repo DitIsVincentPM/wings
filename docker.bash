@@ -1,6 +1,5 @@
 sudo apt-get update
 sudo apt-get -y install curl
-apt-get update -y -qq 
     apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -qq 
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg 
     echo 'deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable'
