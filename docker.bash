@@ -9,7 +9,7 @@ systemctl enable docker
 mkdir -p /etc/pterodactyl
 curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_amd64
 chmod u+x /usr/local/bin/wings
-curl -H 'Authorization: token AKFX46MZSHQ3OBGTSJ3E2SLATWUL2' -o /etc/systemd/system/wings.service https://raw.githubusercontent.com/DitIsVincentPM/wings/main/wings.service 
+curl -L -o /etc/systemd/system/wings.service https://raw.githubusercontent.com/DitIsVincentPM/wings/main/wings.service 
 systemctl enable --now wings
 cd /
 rm run.bash
