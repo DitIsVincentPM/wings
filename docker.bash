@@ -1,7 +1,8 @@
 sudo apt-get update
 sudo apt-get -y install curl
 apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -qq
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg && sudo apt-key add gpg && apt-get update 
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg && sudo apt-key add gpg
+sudo apt-get update
 apt-get -y install docker-ce=5:19.03.14~3-0~ubuntu-bionic docker-ce-cli=5:19.03.14~3-0~ubuntu-bionic containerd.io=1.3.9-1
 systemctl enable docker
 mkdir -p /etc/pterodactyl
